@@ -1,22 +1,15 @@
 import React from "react";
+import Card from "./Card";
 
 function App() {
+  const imgUrl = "https://blackhistorywall.files.wordpress.com/2010/02/picture-device-independent-bitmap-119.jpg";
+  var name = 'Beyonce'
+  var phone = '+123 456 789'
+  var email = 'b@beyonce.com'
   return (
     <div >
       <h1 className="heading">My Contacts</h1>
-      <div className="card">
-        <div className="top">
-          <h2 className='name'>Beyonce</h2>
-          <img className='circle-img'
-            src="https://blackhistorywall.files.wordpress.com/2010/02/picture-device-independent-bitmap-119.jpg"
-            alt="avatar_img"
-          />
-        </div>
-        <div className="bottom">
-          <p className='info'>+123 456 789</p>
-          <p className='info'>b@beyonce.com</p>
-        </div>
-      </div>
+      <Card imgUrl={imgUrl} name={name} phone={phone} email={email} />
     </div>
   );
 }
