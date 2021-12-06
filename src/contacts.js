@@ -1,4 +1,5 @@
 const contacts = [
+
   {
     name: "Beyonce",
     imgURL:
@@ -9,7 +10,7 @@ const contacts = [
   {
     name: "Jack Bauer",
     imgURL:
-      "https://pbs.twimg.com/profile_images/625247595825246208/X3XLea04_400x400.jpg",
+      "https://www.writeups.org/wp-content/uploads/Jack-Bauer-24-Kiefer-Sutherland-c.jpg",
     phone: "+987 654 321",
     email: "jack@nowhere.com"
   },
@@ -21,3 +22,5 @@ const contacts = [
     email: "gmail@chucknorris.com"
   }
 ];
+
+export default contacts;
