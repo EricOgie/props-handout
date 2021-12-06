@@ -1,15 +1,29 @@
 import React from "react";
 import Card from "./Card";
+import { people } from "../Values/people";
+import { eric } from './eric';
+import Avatar from './Avatar';
+
+
+function createContacts(person) {
+  return (
+    <Card
+      key={person.id}
+      imgUrl={person.imgURL}
+      name={person.name}
+      phone={person.phone}
+      email={person.email}
+
+    />
+  );
+}
 
 function App() {
-  const imgUrl = "https://blackhistorywall.files.wordpress.com/2010/02/picture-device-independent-bitmap-119.jpg";
-  var name = 'Beyonce'
-  var phone = '+123 456 789'
-  var email = 'b@beyonce.com'
   return (
     <div >
-      <h1 className="heading">My Contacts</h1>
-      <Card imgUrl={imgUrl} name={name} phone={phone} email={email} />
+      <h1 className="heading">My Super Stars Collection</h1>
+      <Avatar src={eric} />
+      {people.map(createContacts)}
     </div>
   );
 }
